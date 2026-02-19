@@ -5,7 +5,7 @@
 <ul>
     <% @products.each do |product| %>
         <li>
-            <%= product.title %> <br>
+            <a><%= link_to product.title, product_path(product) %></a> <br>
             Price: $<%= product.price %><br>
             Stock: <%= product.stock_quantity %>
         </li>

@@ -17,4 +17,7 @@ Rails.application.routes.draw do
   # products to products/index
   get "/products", to: "products#index"
 
+
+  # show route
+  get "/products/:id", to: "products#show", as: "product"
 end
