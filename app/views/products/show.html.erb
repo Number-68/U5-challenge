@@ -4,6 +4,9 @@
     
 
             <%= @product.title %> <br>
+
+            Category: <%= @product.category.name %><br>
             Price: $<%= @product.price %><br>
-            Stock: <%= @product.stock_quantity %>
+            Stock: <%= @product.stock_quantity %><br>
+            Description: <%= @product.description %>
 </p>

@@ -6,6 +6,7 @@
     <% @products.each do |product| %>
         <li>
             <a><%= link_to product.title, product_path(product) %></a> <br>
+            Category: <%= product.category.name %><br>
             Price: $<%= product.price %><br>
             Stock: <%= product.stock_quantity %>
         </li>
